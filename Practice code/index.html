@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!--<head> element is a container for metadata(data about data) all time used between <html> tag & <body> tag <head> element can contain tags like <style>, <title>, <meta>, @media(for responsive perpose) etc-->
+        <!--<title> tag is used in browser Tab its neede to be meaningful and accurute as much as possible-->
+        <!--<meta> provides info/intel about the HTML document for ranking purpose meta description-->
+        <!--<base> element is for link, target attribute, href img src its basically defines Defines a default address or a default target for all links on a page-->
+        <title>HTML5 practice</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Shahariar Ritul"/>
+        <meta name="description" content="HTML5 practice"/>
+        <meta name="viewport" content="width=device-weidth, initial-scale=1.0"/>
+        <base href="images/"/>
+        <style>
+            table {
+                width:100%;
+            }
+            table, th, td {
+                border:1px solid black;
+                border-collapse: collapse;
+                padding: 20px;
+                font-family:fantasy, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:black;
+                font-size: 20px;
+            }
+            th, td {
+                text-align: left
+            }
+            caption {
+                text-align: center;
+                font-size:40px;
+                color:white
+            }
+            tr:nth-child(even) {
+                background-color: darkgrey;
+            }
+            tr:nth-child(odd) {
+                background-color: dimgray;
+            }
+            .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            font-size: 30px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            }
+            .song {
+                background-color: cornflowerblue;
+                color:cornsilk;
+                border:2px solid black;
+                margin: 20px;
+                font-family: monospace;
+                font-weight: bolder;
+                text-align: center;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .note{
+                color:orange;
+                background-color:none;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .left {
+                background-color:lime;
+                color: honeydew;
+                width: 20%;
+                float: left;
+            }
+            .main {
+                background-color:lightgray;
+                color: honeydew;
+                width: 60%;
+                float: left;
+            }
+            .right {
+                background-color:red;
+                color: honeydew;
+                width: 20%;
+                float: left;
+            }
+            @media screen and (max-width: 800px) {
+                .left .main .right {
+                    width: 100%;
+                }
+                
+
+            }
+        </style>
+    </head>
+    <body style="background-image: url('tttp.jpg'); background-attachment: fixed;">
+
+
+        <h1 style="text-align: center; font-size: 60px; font-family: sans-serif; color:orange; font-weight: bolder;">HTML5</h1>
+<table>
+    <caption>Test Table</caption>
+    <tr>
+        <th colspan="2">First Name & Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Shahariar</td>
+        <td>Ritul</td>
+        <td>21</td>
+    </tr>
+     <tr>
+        <td>Micle</td>
+        <td>Busse</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Joel</td>
+        <td>Tarner</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Devon</td>
+        <td>Truder</td>
+        <td>22</td>
+     </tr>
+</table>
+<!--span is used as a part of an HTML element like <p>, <h1> or any text or document elements-->
+<p>This is an inline <span style="border:1px solid black; font-weight:bolder;">Hello Span</span> paragraph</p>
+<!--div element basically contain one or more HTML elements its use as a container-->
+<div style="background-color: black; color:white; padding:20px;">
+    <h2>London</h2>
+<p>London is the capital city of England. 
+    It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England</p>
+</div>
+<div class="song">
+    <h2>System Of A Down</h2>
+    <p>"Soilder side"</p>
+</div>
+<div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France</p>
+</div>
+<div class="song">
+    <h2>Mettalica</h2>
+    <p>"The Unforgiven I II III"</p>
+</div>
+<div class="city">
+    <h2>Sicily</h2>
+    <p>Sicily is the Largest Island in Italy</p>
+</div>
+<div class="song">
+    <h2>Iron Maiden</h2>
+    <p>"Dance Of The Death"</p>
+</div>
+
+<h1 style="text-align:center; color: ghostwhite; font-size: 40px; font-family:Verdana, Geneva, Tahoma, sans-serif ">The <span class="note">"Span"</span>Element With Class Attribute</h1>
+<p style="text-align: center; color: ghostwhite; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;">The <span class="note">Class</span> attribute can define any element/text/documents style. It can also be used in<span class="note"> Span </span>element.</p>
+
+<iframe src="index.html" name="iframe_a" title="Iframe example" style="width: 100%; height: 300px; border: none;"></iframe>
+
+<p><a href="https://sportsperformanceadvantage.com/" target="iframe_a">Sportssper</a></p>
+
+<!--javascript can manupulte images, form validation or can change any content dynamically-->
+
+<h2 class="note" style="text-align: center; font-size: 40px;">javascript testing</h2>
+
+<button type="button" onclick="myfunction()">Click here</button>
+
+<p id="demo">This is a demonstration</p>
+
+<script>
+    function myfunction() {
+        document.getElementById("demo").style.fontSize="30px"
+        document.getElementById("demo").style.color="white"
+        document.getElementById("demo").style.backgroundColor="black"
+    }
+</script>back
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<img src="/Images/matt-collamer-RDBQonsuiU4-unsplash.jpg" alt="laptop"  style="width: 100%; border: 2px solid blueviolet;">
+<!--<head> element is a container for metadata(data about data)-->
+<!--<meta> element-->   
+<p><img src="tttz.jpg" style="width: 100%;"></p> 
+<p><img src="keybord.jpg" style="max-width: 100%; height: auto;" title="Red Light Gaming Keybord"></p>
+<picture>
+    <source srcset="keybord.jpg" media="(max-width:1400px">
+    <source srcset="Gyb.png" media="(max-width:500px)">
+    <source srcset="Gyb.png">
+    <img src="Gyb.png" style="width: auto;" alt="Logo">           
+</picture>
+
+<div class="left">
+    <p>Left side</p>
+</div>
+<div class="main">
+    <p>Middle side</p>
+</div>
+<div class="right">
+    <p>right side</p>
+</div>
+<section>
+    <h2>The random</h2>
+    <p>the wild fgljkd fikijflk fgkj ff;l fgkgjf lfgfl</p>
+</section>
+
+<section>
+    <h2> The random 2</h2>
+    <p>sjhd hdfd jhdkfd judhf jfd jdf dnhf kjd fj df kkk</p>
+</section>
+<p style="font-size: 50px; color: cornsilk; font-weight: 800;">Its reslly funny &#128514;</p>
+    
+    </body>
+</html>

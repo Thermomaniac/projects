@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(54, 54, 54);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  text-decoration: none;
+  padding: 20px 35px;
+  display: block;
+  color: rgba(24, 212, 149, 0.534);
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+li a:hover {
+  background-color: aquamarine;
+  color: white;
+}
+.dropdown-content a{
+  border-bottom: 1px solid rgb(110, 110, 110);
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: aquamarine;
+}
+.dropdown-content {
+  box-shadow: 0px 8px 16px 0px;
+  display: none;
+  position: absolute;
+  background-color: rgb(44, 44, 44);
+  min-width: 160px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: rgb(49, 201, 150);
+  text-decoration: underline;
+}
+p {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+div.gallery {
+  margin: 20px;
+  border: 1px solid rgb(49, 201, 150);
+  width: 300px;
+  float: left;
+}
+div.gallery:hover {
+  border: 1px solid rgba(117, 122, 120, 0.568);
+  box-shadow: 0px 8px 16px 0px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}

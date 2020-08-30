@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML code learning</title>
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .left {
+                background-color: green;
+                width: 20%;
+                font-family: 'Times New Roman', Times, serif;
+                padding: none;
+                float: left;
+            }
+            .main {
+                background-color:slategray;
+                width: 60%;
+                font-family: 'Times New Roman', Times, serif;
+                padding: none;
+                float: left;
+            }
+            .right {
+                background-color:tomato;
+                width: 20%;
+                font-family: 'Times New Roman', Times, serif;
+                padding: none;
+                float: left;
+            }
+            @media screen and (max-width: 800px){
+                .left .main .right {
+                    width: 700%;
+                }
+            }
+            #backclip {
+                border: 10px dotted black;
+                padding: 15px;
+                background: orange;
+                background-clip:border-box;
+                text-align: center;
+            }
+            
+        </style> 
+
+
+    </head>
+    <body>
+        <div id="backclip">
+            <h1>The CSS styles</h1>
+            <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+
+        <div class="left">
+            <p style="font-size: 30px; text-align: left;"> Left side</p>
+        </div>
+        <div class="main">
+            <p style="font-size: 30px; text-align: center;"> Middle side</p>
+        </div>
+        <div class="right">
+            <p style="font-size: 30px; text-align: right;"> Right side</p>
+        </div>
+
+        <form style="margin-right: auto;">
+            <label for="fname">First name </label><br>
+            <input type="text" id="fname" name="fname" value="Ritul"><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" value="Jon"><br>
+            <br>
+            <input type="button" value="OK">
+        </form>
+        <br>
+        <br>
+        <!--if 'name' attribute is not used  the data of that input field will not be sent at all. -->
+        <!--<label> element is used for the purpode of screen readers -->
+
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </form>
+          <br>
+          <br>
+
+          <form>
+              <label for="cars">Choose car type</label>
+              <select id="cars" name="cars" size="4" multiple> <!--<select> element has <option>,size,multiple attributes--><!--<optionm> attribute has "selected" attribute-->
+              <option value="Volvo">Volvo</option>
+              <option value="Fiat">Fiat</option>
+              <option value="Saab">Saab</option>
+              <option value="Audi">Audi</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Tesla" selected>Tesla</option>
+              </select><br><br>
+              <input type="Submit" value="Submit">
+          </form>
+          <br>
+          <br>
+
+          <form>
+              <textarea name="Massage" cols="40" rows="20">Drop down your massage here.</textarea>
+              <br>
+              <br>
+              <input type="submit">
+          </form>
+
+          <h1>The Button Element</h1>
+
+          <button type="button" onclick="alert('Not clicable yet')">Click here</button>
+          <br>
+          <br>
+          <!--<button> element has "type", onclick=alert attribute-->
+         
+            <form style="margin-left: auto;">
+                <fieldset><br>
+                <legend>Personalia:</legend>
+                <label for="fname">First name </label><br>
+                <input type="text" id="fname" name="fname" value="Ritul"><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" value="Jon"><br>
+                <br>
+                <input type="button" value="OK">
+                <input type="reset">
+                </fieldset>
+                
+            </form>
+            <br>
+            <br>
+
+            <form>
+                <input list="Galaxy">
+                <datalist id="Galaxy">
+                    <option value="Andromeda">
+                    <option value="Black Eye Galaxy">
+                    <option value="Bode's Galaxy">
+                    <option value="Cartwheel Galaxy">
+                    <option value="Cigar Galaxy">
+                    <option value="Comet Galaxy">
+                    <option value="Cosmos Redshift 7">
+                    <option value="Hoag's Object">
+                    <option value="Large Magellanic Cloud">
+                    <option value="Small Magellanic Cloud">
+                </datalist>
+                <br>
+                <br>
+                <input type="Submit" >
+            </form>
+            <br>
+            <br>
+
+            <h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<br>
+<br>
+
+<form>
+    <input type="checkbox" name="Audi" id="Audi">
+    <label for="Audi">Audi</label><br>
+    <input type="checkbox" name="Probox" id="Probox">
+    <label for="Probox">Probox</label><br>
+    <input type="checkbox" name="Nissan" id="Nissan">
+    <label for="Nissan">Nissan</label>     
+</form>
+<br>
+<br>
+
+<form>
+    <label for="clue">Select your color</label>
+    <input type="color" id="clue" name="clue">
+    <input type="submit">
+
+</form>
+
+    </body>
+</html>

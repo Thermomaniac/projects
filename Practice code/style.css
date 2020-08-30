@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(44, 44, 44);
+}
+
+li, a, button {
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content:flex-end;
+  padding: 30px 10%;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-right: auto;
+}
+.nav_link{
+  list-style-type: none;
+}
+.nav_link li {
+  display: inline-block;
+  padding: 0px 25px;
+}
+.nav_link li a {
+  transition: all 0.3sec ease 0s;
+}
+.nav_link li a:hover {
+  color: rgb(48, 137, 211);
+}
+button {
+  margin-left: 25px;
+  padding: 5px 15px;
+  background-color:rgb(48, 137, 211);
+  border: none;
+  border-radius: 250px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(48, 138, 211, 0.603);
+}
+a[target] {
+  background-color: lightblue;
+}
+

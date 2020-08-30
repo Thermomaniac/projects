@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(56, 56, 56);
+}
+div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(226, 233, 231);
+  font-size: xx-large;
+  text-shadow: 2px 2px 7px black;
+  background:rgb(16, 206, 158);
+  transition: width 3s, height 3s, transform 3s;
+  animation-name: text;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+}
+@keyframes text {
+  0% {background-color: green; left: 0px; top: 0;}
+  25% {background-color:greenyellow; left: 200px; top: 0px;}
+  50% {background-color: rgb(16, 206, 158); left: 200px; top: 200px;}
+  75% {background-color: rgb(5, 218, 255); left: 0px; top: 200px;}
+  100% {background-color: rgb(48, 93, 240); left: 0px; top: 0px;}
+}
+
+div:hover {
+  width: 300px;
+  height: 400px;
+  box-shadow: 4px 4px 100px rgb(16, 209, 161);
+  transform: rotate(360deg);
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: aquamarine;
+  text-decoration: underline;
+}
+p {
+  text-align: center;
+  color: aquamarine;
+  font-family: sans-serif;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  text-align: center;
+  visibility: hidden;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+  padding: 8px 0;
+  opacity: 0;
+  transition: opacity 2s;
+  /* position the tooltip */
+  position: absolute;
+  z-index: 1;
+  left: 108%;
+  top: -8px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+img {
+  display: block;
+  border-radius: 10px;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
